@@ -611,7 +611,7 @@ class VAR(tsm.TSM):
                     result.rename(columns={0:self.data_name[variable]}, inplace=True)
                     result.index = date_index[-h:]          
                 else:
-                     result[str(self.data_name[variable])] = forecasted_values    
+                    result[str(self.data_name[variable])] = forecasted_values    
 
             return result
 
